@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オセロ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table"></div>
+    <div id="turn"></div>
+    <div id="count">
+        <div id="text-black"></div>
+        <div id="text-white"></div>
+    </div>
+    <p class="skip">▼置く場所がない場合はボタンを押してスキップ</p>
+    <button type="button" id="skip" onclick="chengeTurn()">スキップ</button>
+    <p class="reset">▼リセットしたいときはここ！</p>
+    <button type="button" id="init" onclick="location.reload()">リセット</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
